@@ -24,7 +24,7 @@ def load_data():
 # Loading and caching resources
 @st.cache_resource
 def load_model():
-    onnx_model_path = "data/tinybert_model_quantized.onnx"
+    onnx_model_path = "model/tinybert_model_quantized.onnx"
     onnx_model = onnx.load(onnx_model_path)
     ort_session = ort.InferenceSession(onnx_model_path)
     tokenizer = BertTokenizer.from_pretrained("data/tinybert_tokenizer")
