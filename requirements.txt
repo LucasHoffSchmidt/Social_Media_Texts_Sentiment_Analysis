@@ -1,0 +1,9 @@
+streamlit
+onnx
+onnxruntime
+torch
+numpy
+matplotlib
+wordcloud
+transformers
+joblib
